@@ -1,0 +1,81 @@
+site_name: Wetware Notes — 湿件计算笔记
+site_url: https://jeffliulab.github.io/wetware-notes/
+repo_url: https://github.com/jeffliulab/wetware-notes
+repo_name: jeffliulab/wetware-notes
+
+theme:
+  name: material
+  language: zh
+  palette:
+    - scheme: default
+      primary: amber
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - scheme: slate
+      primary: amber
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search
+  - i18n:
+      docs_structure: suffix
+      languages:
+        - locale: zh
+          default: true
+          name: 中文
+          build: true
+        - locale: en
+          name: English
+          build: true
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - toc:
+      permalink: true
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - 首页: index.md
+  - 导论:
+    - 00_Foundations/index.md
+    - 总览: 00_Foundations/Overview.md
+  - 体外神经元网络:
+    - 01_Neuron_Networks_InVitro/index.md
+    - 总览: 01_Neuron_Networks_InVitro/Overview.md
+  - 电刺激与多电极记录:
+    - 02_Stimulation_Recording/index.md
+    - 总览: 02_Stimulation_Recording/Overview.md
+  - 体外学习与可塑性:
+    - 03_Learning_Plasticity/index.md
+    - 总览: 03_Learning_Plasticity/Overview.md
+  - 生物混合与闭环系统:
+    - 04_Biohybrid_Systems/index.md
+    - 总览: 04_Biohybrid_Systems/Overview.md
+  - 物理与储备池计算范式:
+    - 05_Compute_Paradigms/index.md
+    - 总览: 05_Compute_Paradigms/Overview.md
+  - 伦理与前沿:
+    - 06_Ethics_Frontiers/index.md
+    - 总览: 06_Ethics_Frontiers/Overview.md

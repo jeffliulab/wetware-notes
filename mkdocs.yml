@@ -69,6 +69,7 @@ nav:
     - 总览: 02_Stimulation_Recording/Overview.md
   - 体外学习与可塑性:
     - 03_Learning_Plasticity/index.md
+    - DishBrain: 03_Learning_Plasticity/DishBrain.md
     - 总览: 03_Learning_Plasticity/Overview.md
   - 生物混合与闭环系统:
     - 04_Biohybrid_Systems/index.md
